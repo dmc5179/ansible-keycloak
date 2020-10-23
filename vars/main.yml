@@ -6,3 +6,7 @@ keycloak_checksum: '{{ keycloak_checksums[keycloak_ver] }}'
 
 keycloak_install_dir: '{{ keycloak_parent_install_dir }}/{{ keycloak_name }}'
 keycloak_link_dir: '{{ keycloak_parent_install_dir }}/keycloak'
+
+wildfly_user: 'wildfly'
+wildfly_group: 'wildfly'
+wildfly_conf_dir: '/etc/wildfly'
