@@ -35,3 +35,7 @@ keycloak_checksums:
   '10.0.2': sha1:2b90bdefd3c837b2f3cc3d44263b6503cd6fbf62
   # https://downloads.jboss.org/keycloak/11.0.0/keycloak-11.0.0.tar.gz.sha1
   '11.0.0': sha1:398a328a180682ee58b06df148938f5de710f89f
+
+
+keycloak_username: 'admin'
+keycloak_password: 'SomethingHardToGuess'

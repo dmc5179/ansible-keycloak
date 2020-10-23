@@ -108,6 +108,12 @@
     group: root
     mode: 0755
 
+- name: Create default user
+  become: true
+  become_user: '{{ wildfly_user }}'
+  shell: '{{ keycloak_parent_install_dir }}/keycloak-{{ keycloak_ver }}/bin/add-user-keycloak.sh -r master -u {{ keycloak_username }} -p {{ keycloak_password }}'
+  tags: user_create
+
 - name: Start wildfly service
   systemd:
     name: wildfly
